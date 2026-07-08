@@ -7,10 +7,12 @@ import '@styles/main.scss';
 import App from './App.tsx';
 import { queryClient } from './api/queryClient';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename="/DummyJSON-Products-Manager">
+      <BrowserRouter basename={basename || undefined}>
         <App />
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />

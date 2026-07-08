@@ -1,0 +1,151 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 14 Pro",
+      "description": "Смартфон Apple с дисплеем Super Retina XDR и камерой 48 Мп.",
+      "price": 999.99,
+      "category": "smartphones",
+      "brand": "Apple",
+      "stock": 34,
+      "rating": 4.8,
+      "thumbnail": "https://placehold.co/300x300/1a1a2e/eaeaea?text=iPhone+14+Pro",
+      "images": ["https://placehold.co/600x600/1a1a2e/eaeaea?text=iPhone+14+Pro"]
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S23",
+      "description": "Флагманский Android-смартфон с мощным процессором и отличной камерой.",
+      "price": 899.99,
+      "category": "smartphones",
+      "brand": "Samsung",
+      "stock": 52,
+      "rating": 4.6,
+      "thumbnail": "https://placehold.co/300x300/16213e/eaeaea?text=Galaxy+S23",
+      "images": ["https://placehold.co/600x600/16213e/eaeaea?text=Galaxy+S23"]
+    },
+    {
+      "id": 3,
+      "title": "MacBook Pro 14",
+      "description": "Ноутбук для профессионалов на чипе Apple M3 Pro.",
+      "price": 1999.99,
+      "category": "laptops",
+      "brand": "Apple",
+      "stock": 18,
+      "rating": 4.9,
+      "thumbnail": "https://placehold.co/300x300/0f3460/eaeaea?text=MacBook+Pro",
+      "images": ["https://placehold.co/600x600/0f3460/eaeaea?text=MacBook+Pro"]
+    },
+    {
+      "id": 4,
+      "title": "Dell XPS 15",
+      "description": "Премиальный Windows-ноутбук с OLED-дисплеем.",
+      "price": 1499.99,
+      "category": "laptops",
+      "brand": "Dell",
+      "stock": 27,
+      "rating": 4.5,
+      "thumbnail": "https://placehold.co/300x300/533483/eaeaea?text=Dell+XPS+15",
+      "images": ["https://placehold.co/600x600/533483/eaeaea?text=Dell+XPS+15"]
+    },
+    {
+      "id": 5,
+      "title": "Sony WH-1000XM5",
+      "description": "Беспроводные наушники с активным шумоподавлением.",
+      "price": 349.99,
+      "category": "audio",
+      "brand": "Sony",
+      "stock": 64,
+      "rating": 4.7,
+      "thumbnail": "https://placehold.co/300x300/e94560/eaeaea?text=Sony+WH-1000XM5",
+      "images": ["https://placehold.co/600x600/e94560/eaeaea?text=Sony+WH-1000XM5"]
+    },
+    {
+      "id": 6,
+      "title": "Apple Watch Series 9",
+      "description": "Умные часы с датчиками здоровья и Always-On дисплеем.",
+      "price": 429.99,
+      "category": "wearables",
+      "brand": "Apple",
+      "stock": 41,
+      "rating": 4.6,
+      "thumbnail": "https://placehold.co/300x300/1a1a2e/eaeaea?text=Apple+Watch",
+      "images": ["https://placehold.co/600x600/1a1a2e/eaeaea?text=Apple+Watch"]
+    },
+    {
+      "id": 7,
+      "title": "Logitech MX Master 3S",
+      "description": "Эргономичная беспроводная мышь для продуктивной работы.",
+      "price": 99.99,
+      "category": "peripherals",
+      "brand": "Logitech",
+      "stock": 88,
+      "rating": 4.8,
+      "thumbnail": "https://placehold.co/300x300/16213e/eaeaea?text=MX+Master+3S",
+      "images": ["https://placehold.co/600x600/16213e/eaeaea?text=MX+Master+3S"]
+    },
+    {
+      "id": 8,
+      "title": "Keychron K2",
+      "description": "Компактная механическая клавиатура с поддержкой Bluetooth.",
+      "price": 89.99,
+      "category": "peripherals",
+      "brand": "Keychron",
+      "stock": 73,
+      "rating": 4.4,
+      "thumbnail": "https://placehold.co/300x300/0f3460/eaeaea?text=Keychron+K2",
+      "images": ["https://placehold.co/600x600/0f3460/eaeaea?text=Keychron+K2"]
+    },
+    {
+      "id": 9,
+      "title": "Samsung 49 Odyssey G9",
+      "description": "Изогнутый игровой монитор 49 дюймов с частотой 240 Гц.",
+      "price": 1299.99,
+      "category": "monitors",
+      "brand": "Samsung",
+      "stock": 12,
+      "rating": 4.7,
+      "thumbnail": "https://placehold.co/300x300/533483/eaeaea?text=Odyssey+G9",
+      "images": ["https://placehold.co/600x600/533483/eaeaea?text=Odyssey+G9"]
+    },
+    {
+      "id": 10,
+      "title": "PlayStation 5",
+      "description": "Игровая консоль нового поколения от Sony.",
+      "price": 499.99,
+      "category": "gaming",
+      "brand": "Sony",
+      "stock": 22,
+      "rating": 4.9,
+      "thumbnail": "https://placehold.co/300x300/e94560/eaeaea?text=PlayStation+5",
+      "images": ["https://placehold.co/600x600/e94560/eaeaea?text=PlayStation+5"]
+    },
+    {
+      "id": 11,
+      "title": "Xbox Series X",
+      "description": "Мощная игровая консоль Microsoft с поддержкой 4K.",
+      "price": 499.99,
+      "category": "gaming",
+      "brand": "Microsoft",
+      "stock": 19,
+      "rating": 4.8,
+      "thumbnail": "https://placehold.co/300x300/1a1a2e/eaeaea?text=Xbox+Series+X",
+      "images": ["https://placehold.co/600x600/1a1a2e/eaeaea?text=Xbox+Series+X"]
+    },
+    {
+      "id": 12,
+      "title": "Kindle Paperwhite",
+      "description": "Электронная книга с подсветкой и водозащитой.",
+      "price": 139.99,
+      "category": "tablets",
+      "brand": "Amazon",
+      "stock": 56,
+      "rating": 4.5,
+      "thumbnail": "https://placehold.co/300x300/16213e/eaeaea?text=Kindle",
+      "images": ["https://placehold.co/600x600/16213e/eaeaea?text=Kindle"]
+    }
+  ],
+  "total": 12,
+  "skip": 0,
+  "limit": 12
+}

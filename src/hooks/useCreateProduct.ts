@@ -1,4 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { isLocalProductsDataSource } from '@api/dataSource';
 import { createProduct } from '@api/products';
 import { productKeys } from '@api/queryKeys';
 import { useLocalProductsStore } from '@store/localProductsStore';
@@ -15,19 +16,21 @@ export const useCreateProduct = () => {
       queryClient.setQueryData<ProductsResponse>(productKeys.list(undefined), (oldData) => {
         if (!oldData) return oldData;
 
-        const existingIds = oldData.products.map((p) => p.id);
-        const localId = generateLocalId(existingIds);
-        addLocalId(localId);
-
-        const productWithLocalId = {
+        let product = {
           ...serverProduct,
-          id: localId,
           ...variables,
         };
 
+        if (isLocalProductsDataSource()) {
+          const existingIds = oldData.products.map((p) => p.id);
+          const localId = generateLocalId(existingIds);
+          addLocalId(localId);
+          product = { ...product, id: localId };
+        }
+
         return {
           ...oldData,
-          products: [productWithLocalId, ...oldData.products],
+          products: [product, ...oldData.products],
           total: oldData.total + 1,
         };
       });

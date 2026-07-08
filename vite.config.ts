@@ -8,8 +8,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const stylesDir = path.resolve(__dirname, 'src/styles');
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/DummyJSON-Products-Manager/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/DummyJSON-Products-Manager/' : '/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -31,4 +31,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
