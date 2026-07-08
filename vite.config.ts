@@ -9,6 +9,7 @@ const stylesDir = path.resolve(__dirname, 'src/styles');
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/DummyJSON-Products-Manager/',
   plugins: [react()],
   resolve: {
     alias: {
