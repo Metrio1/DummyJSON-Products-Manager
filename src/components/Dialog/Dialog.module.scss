@@ -1,0 +1,112 @@
+@use '@styles/abstracts' as *;
+
+.dialog__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: overlay-fade-in 200ms ease-out;
+
+  &[data-state='closed'] {
+    animation: overlay-fade-out 200ms ease-in;
+  }
+}
+
+@keyframes overlay-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlay-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.dialog__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  padding: $spacing-xl;
+  background-color: $color-background;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  animation: content-slide-in 200ms ease-out;
+
+  &[data-state='closed'] {
+    animation: content-slide-out 200ms ease-in;
+  }
+}
+
+@keyframes content-slide-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes content-slide-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+}
+
+.dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-lg;
+}
+
+.dialog__title {
+  margin: 0;
+  font-size: $font-size-lg;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.dialog__close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 1.25rem;
+  color: $color-text-muted;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  @include focus-visible-ring($color-primary);
+
+  &:hover {
+    background-color: #f3f4f6;
+    color: $color-text;
+  }
+}
+
+.dialog__description {
+  @include visually-hidden;
+}

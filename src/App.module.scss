@@ -1,0 +1,6 @@
+.app {
+  @include flex-center;
+  min-height: 100vh;
+  font-size: $font-size-lg;
+  color: $color-text;
+}

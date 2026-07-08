@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,36 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin media-breakpoint($breakpoint) {
+  @if not map.has-key($breakpoints, $breakpoint) {
+    @error 'Unknown breakpoint: #{$breakpoint}. Available: #{map.keys($breakpoints)}';
+  }
+  @media (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin focus-visible-ring($color) {
+  &:focus-visible {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+  }
+}
