@@ -1,8 +1,10 @@
 import axios, { type AxiosError } from 'axios';
 
+const DUMMYJSON_BASE = 'https://dummyjson.com';
+
 export const axiosInstance = axios.create({
-  baseURL: 'https://dummyjson.com',
-  timeout: 8000,
+  baseURL: 'https://api.allorigins.win/raw?url=' + encodeURIComponent(DUMMYJSON_BASE),
+  timeout: 10000,
 });
 
 axiosInstance.interceptors.response.use(
